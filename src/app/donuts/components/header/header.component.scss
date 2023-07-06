@@ -1,0 +1,14 @@
+.header {
+  background-color: beige;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 3rem;
+  }
+}
