@@ -1,9 +1,11 @@
 .header {
-  background-color: beige;
+  padding: 1rem 0;
+  background-color: var(--color-background);
 
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
   }
 
