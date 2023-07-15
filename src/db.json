@@ -89,6 +89,16 @@
       "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
       "title": "Caramel Glazed Donut",
       "price": 1.99
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1533070909792-0376f871d25f",
+      "title": "Raspberry Donut",
+      "price": 2.49
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1540530134560-50f8a3889185",
+      "title": "Lemon Donut",
+      "price": 1.99
     }
   ]
 }
