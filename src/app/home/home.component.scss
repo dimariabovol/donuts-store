@@ -1,0 +1,10 @@
+.hero-section {
+  padding: 22rem 0;
+  background-image: url('https://placehold.co/1680x960?text=Donut');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('https://placehold.co/1680x960@2x?text=Donut');
+  }
+}
