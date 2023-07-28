@@ -1,1 +1,5 @@
-<p>product-list works!</p>
+<ul class="product-list">
+  <li *ngFor="let donut of donuts" class="product-list__item">
+    <donuts-product [product]="donut"></donuts-product>
+  </li>
+</ul>
