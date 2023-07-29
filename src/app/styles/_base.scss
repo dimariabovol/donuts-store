@@ -1,5 +1,10 @@
 body {
   margin: 0;
+  color: var(--color-primary);
+  font-family: 'Acme';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 ul {
@@ -21,4 +26,11 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
 }
