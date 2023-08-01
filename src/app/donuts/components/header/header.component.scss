@@ -16,19 +16,6 @@
     flex-grow: 1;
   }
 
-  &__logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 2rem;
-    text-transform: uppercase;
-  }
-
-  &__logo-icon {
-    stroke: currentColor;
-    stroke-width: 0.125rem;
-  }
-
   &__menu {
     display: flex;
     gap: 3rem;
