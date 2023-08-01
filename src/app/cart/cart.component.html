@@ -1,1 +1,6 @@
-<p>cart works!</p>
+<ul>
+  <li *ngFor="let product of cart | async">
+    <span>{{ product.title }}</span>
+    <span>{{ product.price }}</span>
+  </li>
+</ul>

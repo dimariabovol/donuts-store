@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { CartService } from 'src/app/cart/cart.service';
 import { IDonut } from 'src/app/interfaces/donut';
 
 @Component({
@@ -9,4 +10,10 @@ import { IDonut } from 'src/app/interfaces/donut';
 })
 export class ProductComponent {
   @Input() product!: IDonut;
+
+  constructor(private _cartService: CartService) {}
+
+  addToCart(product: IDonut) {
+    this._cartService.add(product);
+  }
 }
