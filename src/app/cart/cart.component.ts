@@ -6,6 +6,9 @@ import { IDonut } from '../interfaces/donut';
   selector: 'donuts-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss'],
+  host: {
+    class: 'cart',
+  },
 })
 export class CartComponent {
   cart: IDonut[] = [];
@@ -17,7 +20,9 @@ export class CartComponent {
     this._cartService.cart$.subscribe((products: IDonut[]) => {
       if (!products.length) {
         this.isEmptyCart = true;
+        return;
       }
+
       this.cart = products;
     });
   }

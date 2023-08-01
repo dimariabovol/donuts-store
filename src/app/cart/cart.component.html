@@ -3,10 +3,9 @@
 </ng-template>
 
 <div class="container">
-  <ul *ngIf="!isEmptyCart; else emptyState">
-    <li *ngFor="let product of cart">
-      <span>{{ product.title }}</span>
-      <span>{{ product.price }}</span>
-    </li>
-  </ul>
+  <div class="cart__order-list">
+    <h2 class="cart__title">Su pedido:</h2>
+    <donuts-order-list *ngIf="!isEmptyCart; else emptyState" [products]="cart">
+    </donuts-order-list>
+  </div>
 </div>
