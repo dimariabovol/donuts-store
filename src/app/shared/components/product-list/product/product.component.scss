@@ -1,0 +1,21 @@
+.product {
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__counter {
+    display: flex;
+  }
+
+  &__counter-btn {
+  }
+
+  &__counter-input {
+  }
+
+  &__order-btn {
+  }
+}

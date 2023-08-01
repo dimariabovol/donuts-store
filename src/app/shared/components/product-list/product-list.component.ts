@@ -8,13 +8,13 @@ import { IDonut } from 'src/app/interfaces/donut';
   styleUrls: ['./product-list.component.scss'],
 })
 export class ProductListComponent implements OnInit {
-  donuts: IDonut[] = [];
+  products: IDonut[] = [];
 
   constructor(private _productsService: ProductsService) {}
 
   ngOnInit(): void {
-    this._productsService.getAll$().subscribe(donuts => {
-      this.donuts = donuts;
+    this._productsService.getAll$().subscribe((donuts: IDonut[]) => {
+      this.products = donuts;
     });
   }
 }
