@@ -2,15 +2,40 @@
   padding: 1rem 0;
   background-color: var(--color-background);
 
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
   &__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    flex-grow: 1;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__logo-icon {
+    stroke: currentColor;
+    stroke-width: 0.125rem;
   }
 
   &__menu {
     display: flex;
     gap: 3rem;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1rem;
   }
 }

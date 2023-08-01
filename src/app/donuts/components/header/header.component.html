@@ -1,12 +1,36 @@
 <header class="header">
   <div class="container">
-    <nav class="header__nav">
-      <a routerLink="/">Logo</a>
-      <ul class="header__menu">
-        <li><a routerLink="#">Item 1</a></li>
-        <li><a routerLink="#">Item 2</a></li>
-        <li><a routerLink="#">Item 3</a></li>
-      </ul>
-    </nav>
+    <div class="header__inner">
+      <nav class="header__nav">
+        <a class="header__logo" routerLink="/">
+          <svg class="header__logo-icon" fill="none" width="60" height="60">
+            <use href="../../../../assets/images/icons.svg#icon-logo"></use>
+          </svg>
+          Oh my donuts
+        </a>
+        <ul class="header__menu">
+          <li><a routerLink="#">Item 1</a></li>
+          <li><a routerLink="#">Item 2</a></li>
+          <li><a routerLink="#">Item 3</a></li>
+        </ul>
+      </nav>
+      <div class="header__socials">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <svg width="24" height="24">
+            <use href="../../../../assets/images/icons.svg#icon-inst"></use>
+          </svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <svg width="24" height="24">
+            <use href="../../../../assets/images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="header__cart">
+        <svg width="24" height="24">
+          <use href="../../../../assets/images/icons.svg#icon-cart"></use>
+        </svg>
+      </div>
+    </div>
   </div>
 </header>
