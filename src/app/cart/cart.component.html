@@ -1,6 +1,12 @@
-<ul>
-  <li *ngFor="let product of cart | async">
-    <span>{{ product.title }}</span>
-    <span>{{ product.price }}</span>
-  </li>
-</ul>
+<ng-template #emptyState>
+  <p>The cart is empty</p>
+</ng-template>
+
+<div class="container">
+  <ul *ngIf="!isEmptyCart; else emptyState">
+    <li *ngFor="let product of cart">
+      <span>{{ product.title }}</span>
+      <span>{{ product.price }}</span>
+    </li>
+  </ul>
+</div>
