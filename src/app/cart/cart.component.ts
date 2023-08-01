@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { IDonut } from '../interfaces/donut';
 
 @Component({
-  selector: 'app-cart',
+  selector: 'donuts-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss'],
 })
