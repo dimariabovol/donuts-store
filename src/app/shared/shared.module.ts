@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductComponent } from './components/product-list/product/product.component';
 import { FormsModule } from '@angular/forms';
+import { ButtonIconComponent } from './ui/button-icon/button-icon.component';
 
 @NgModule({
-  declarations: [ProductComponent, ProductListComponent],
+  declarations: [ButtonIconComponent, ProductComponent, ProductListComponent],
   imports: [CommonModule, FormsModule],
-  exports: [ProductComponent, ProductListComponent],
+  exports: [ButtonIconComponent, ProductComponent, ProductListComponent],
 })
 export class SharedModule {}

@@ -9,24 +9,27 @@
       </ul>
     </nav>
     <div class="header__socials">
-      <a href="#" target="_blank" rel="noopener noreferrer">
-        <svg width="24" height="24">
-          <use href="../../../../assets/images/icons.svg#icon-inst"></use>
-        </svg>
+      <a
+        donuts-button-icon
+        icon="instagram"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
       </a>
-      <a href="#" target="_blank" rel="noopener noreferrer">
-        <svg width="24" height="24">
-          <use href="../../../../assets/images/icons.svg#icon-facebook"></use>
-        </svg>
-      </a>
+      <a
+        donuts-button-icon
+        icon="facebook"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      ></a>
     </div>
-    <a class="header__cart" routerLink="/cart">
-      <svg width="24" height="24">
-        <use href="../../../../assets/images/icons.svg#icon-cart"></use>
-      </svg>
+    <div class="header__cart">
+      <a donuts-button-icon icon="cart" routerLink="/cart"> </a>
       <span *ngIf="cartItemsCount > 0" class="header__cart-count">
         {{ cartItemsCount }}
       </span>
-    </a>
+    </div>
   </div>
 </div>
