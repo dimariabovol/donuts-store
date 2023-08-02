@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IDonut } from 'src/app/interfaces/donut';
+import { ICartDonut } from '../../interfaces/cart-product.interface';
 
 @Component({
   selector: 'donuts-order-list',
@@ -7,5 +7,5 @@ import { IDonut } from 'src/app/interfaces/donut';
   styleUrls: ['./order-list.component.scss'],
 })
 export class OrderListComponent {
-  @Input() products: IDonut[] = [];
+  @Input() products: ICartDonut[] = [];
 }

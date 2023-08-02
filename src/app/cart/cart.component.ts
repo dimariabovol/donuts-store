@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CartService } from './cart.service';
-import { IDonut } from '../interfaces/donut';
+import { ICartDonut } from './interfaces/cart-product.interface';
 
 @Component({
   selector: 'donuts-cart',
@@ -11,13 +11,13 @@ import { IDonut } from '../interfaces/donut';
   },
 })
 export class CartComponent {
-  cart: IDonut[] = [];
+  cart: ICartDonut[] = [];
   isEmptyCart: boolean = false;
 
   constructor(private _cartService: CartService) {}
 
   ngOnInit(): void {
-    this._cartService.cart$.subscribe((products: IDonut[]) => {
+    this._cartService.cart$.subscribe((products: ICartDonut[]) => {
       if (!products.length) {
         this.isEmptyCart = true;
         return;

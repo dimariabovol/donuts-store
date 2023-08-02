@@ -11,7 +11,12 @@ import { SharedModule } from '../shared/shared.module';
 import { LogoComponent } from './components/logo/logo.component';
 
 @NgModule({
-  declarations: [DonutsComponent, FooterComponent, HeaderComponent, LogoComponent],
+  declarations: [
+    DonutsComponent,
+    FooterComponent,
+    HeaderComponent,
+    LogoComponent,
+  ],
   imports: [
     BrowserModule,
     CartModule,

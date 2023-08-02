@@ -14,9 +14,26 @@
   <span class="donut__price">{{ product.price }}</span>
   <div class="product__footer">
     <div class="product__counter">
-      <button class="product__counter-btn" type="button">+</button>
-      <input class="product__counter-input" type="number" />
-      <button class="product__counter-btn" type="button">-</button>
+      <button
+        class="product__counter-btn"
+        (click)="decreaseCount()"
+        type="button"
+      >
+        -
+      </button>
+      <input
+        class="product__counter-input"
+        type="number"
+        [(ngModel)]="count"
+        name="counter"
+      />
+      <button
+        class="product__counter-btn"
+        (click)="increaseCount()"
+        type="button"
+      >
+        +
+      </button>
     </div>
     <button
       class="product__order-btn"
