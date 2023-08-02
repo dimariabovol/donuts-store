@@ -8,6 +8,10 @@ body {
   background-color: var(--color-background);
 }
 
+main {
+  margin-top: 5.75rem; // compensate header height
+}
+
 ul {
   margin: 0;
   padding: 0;

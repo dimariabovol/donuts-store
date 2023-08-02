@@ -22,12 +22,25 @@ export class CartService {
       cartProduct => cartProduct.id === product.id,
     );
 
-    if (availableProduct) {
-      availableProduct.count = count;
-      return;
+    if (!availableProduct) {
+      this.cart.push({ ...product, count });
     }
 
-    this.cart.push({ ...product, count });
+    if (availableProduct) {
+      availableProduct.count = count;
+    }
+
     this._cart$$.next(this.cart);
   }
+
+  // cartItemsCount() {
+  //   this.cart$.subscribe(products => {
+
+  //   })
+
+  //   return this.cart.reduce(
+  //     (totalCount, product) => totalCount + product.count,
+  //     0,
+  //   );
+  // }
 }

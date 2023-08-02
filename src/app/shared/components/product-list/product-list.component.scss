@@ -1,9 +1,9 @@
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 6rem;
+  gap: 3rem;
 
   &__item {
-    flex-basis: calc((100% - 18rem) / 4);
+    flex-basis: calc((100% - 9rem) / 4);
   }
 }

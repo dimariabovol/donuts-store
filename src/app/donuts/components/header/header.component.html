@@ -1,31 +1,32 @@
-<header class="header">
-  <div class="container">
-    <div class="header__inner">
-      <nav class="header__nav">
-        <donuts-logo></donuts-logo>
-        <ul class="header__menu">
-          <li><a routerLink="#">Item 1</a></li>
-          <li><a routerLink="#">Item 2</a></li>
-          <li><a routerLink="#">Item 3</a></li>
-        </ul>
-      </nav>
-      <div class="header__socials">
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <svg width="24" height="24">
-            <use href="../../../../assets/images/icons.svg#icon-inst"></use>
-          </svg>
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <svg width="24" height="24">
-            <use href="../../../../assets/images/icons.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </div>
-      <a class="header__cart" routerLink="/cart">
+<div class="container">
+  <div class="header__inner">
+    <nav class="header__nav">
+      <donuts-logo></donuts-logo>
+      <ul class="header__menu">
+        <li><a routerLink="#">Item 1</a></li>
+        <li><a routerLink="#">Item 2</a></li>
+        <li><a routerLink="#">Item 3</a></li>
+      </ul>
+    </nav>
+    <div class="header__socials">
+      <a href="#" target="_blank" rel="noopener noreferrer">
         <svg width="24" height="24">
-          <use href="../../../../assets/images/icons.svg#icon-cart"></use>
+          <use href="../../../../assets/images/icons.svg#icon-inst"></use>
+        </svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <svg width="24" height="24">
+          <use href="../../../../assets/images/icons.svg#icon-facebook"></use>
         </svg>
       </a>
     </div>
+    <a class="header__cart" routerLink="/cart">
+      <svg width="24" height="24">
+        <use href="../../../../assets/images/icons.svg#icon-cart"></use>
+      </svg>
+      <span *ngIf="cartItemsCount > 0" class="header__cart-count">
+        {{ cartItemsCount }}
+      </span>
+    </a>
   </div>
-</header>
+</div>
