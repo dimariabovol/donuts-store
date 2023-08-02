@@ -1,6 +1,6 @@
 <ul class="order-list">
   <li class="order-list__item" *ngFor="let product of products">
     <span>{{ product.title }} ({{ product.count }})</span>
-    <span>{{ product.price }}</span>
+    <span>{{ product.price | currency }}</span>
   </li>
 </ul>

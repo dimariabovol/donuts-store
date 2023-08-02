@@ -6,13 +6,11 @@ import { ICartDonut } from './interfaces/cart-product.interface';
   selector: 'donuts-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss'],
-  host: {
-    class: 'cart',
-  },
 })
 export class CartComponent {
   cart: ICartDonut[] = [];
   isEmptyCart: boolean = false;
+  totalCartPrice: number = 0;
 
   constructor(private _cartService: CartService) {}
 
@@ -24,6 +22,12 @@ export class CartComponent {
       }
 
       this.cart = products;
+
+      this.totalCartPrice = products.reduce((totalCartPrice, product) => {
+        const totalProductPrice = product.price * product.count;
+
+        return totalCartPrice + totalProductPrice;
+      }, 0);
     });
   }
 }
