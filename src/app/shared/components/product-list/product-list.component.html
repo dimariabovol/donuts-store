@@ -1,4 +1,8 @@
-<ul class="product-list">
+<ng-template #emptyState>
+  <p>The product list is empty</p>
+</ng-template>
+
+<ul *ngIf="!isEmptyList; else emptyState" class="product-list">
   <li *ngFor="let product of products" class="product-list__item">
     <donuts-product [product]="product"></donuts-product>
   </li>

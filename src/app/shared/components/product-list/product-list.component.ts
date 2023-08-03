@@ -9,11 +9,17 @@ import { IDonut } from 'src/app/interfaces/donut';
 })
 export class ProductListComponent implements OnInit {
   products: IDonut[] = [];
+  isEmptyList: boolean = false;
 
   constructor(private _productsService: ProductsService) {}
 
   ngOnInit(): void {
     this._productsService.getAll$().subscribe((donuts: IDonut[]) => {
+      if (!donuts.length) {
+        this.isEmptyList = true;
+        return;
+      }
+
       this.products = donuts;
     });
   }
