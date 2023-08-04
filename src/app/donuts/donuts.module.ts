@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SharedModule } from '../shared/shared.module';
 import { LogoComponent } from './components/logo/logo.component';
+import { CatalogPageComponent } from './catalog-page/catalog-page.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { LogoComponent } from './components/logo/logo.component';
     FooterComponent,
     HeaderComponent,
     LogoComponent,
+    CatalogPageComponent,
   ],
   imports: [
     BrowserModule,

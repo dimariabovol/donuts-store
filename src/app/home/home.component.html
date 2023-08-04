@@ -8,7 +8,9 @@
   <div class="container">
     <h2>Las preferidas</h2>
     <a routerLink="#">Ver más...</a>
-    <donuts-product-list></donuts-product-list>
+    <donuts-product-list
+      [numberOfProductsToShow]="NUMBER_OF_PRODUCTS_TO_SHOW"
+    ></donuts-product-list>
   </div>
 </section>
 <section>

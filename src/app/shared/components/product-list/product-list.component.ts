@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ProductsService } from '../../services/products.service';
 import { IDonut } from 'src/app/interfaces/donut';
 
@@ -8,6 +8,8 @@ import { IDonut } from 'src/app/interfaces/donut';
   styleUrls: ['./product-list.component.scss'],
 })
 export class ProductListComponent implements OnInit {
+  @Input() numberOfProductsToShow: number = 0;
+
   products: IDonut[] = [];
   isEmptyList: boolean = false;
 
@@ -20,7 +22,9 @@ export class ProductListComponent implements OnInit {
         return;
       }
 
-      this.products = donuts;
+      this.products = this.numberOfProductsToShow
+        ? donuts.splice(0, this.numberOfProductsToShow)
+        : donuts;
     });
   }
 }
