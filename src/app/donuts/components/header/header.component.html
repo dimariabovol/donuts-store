@@ -3,9 +3,33 @@
     <nav class="header__nav">
       <donuts-logo></donuts-logo>
       <ul class="header__menu">
-        <li><a routerLink="#">Item 1</a></li>
-        <li><a routerLink="#">Item 2</a></li>
-        <li><a routerLink="#">Item 3</a></li>
+        <li>
+          <a
+            class="header__link"
+            routerLink="/home"
+            routerLinkActive="header__link--active"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            class="header__link"
+            routerLink="/catalog"
+            routerLinkActive="header__link--active"
+          >
+            Catalog
+          </a>
+        </li>
+        <li>
+          <a
+            class="header__link"
+            routerLink="#"
+            routerLinkActive="header__link--active"
+          >
+            Item 3
+          </a>
+        </li>
       </ul>
     </nav>
     <div class="header__socials">

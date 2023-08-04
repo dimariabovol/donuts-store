@@ -24,6 +24,23 @@
     gap: 3rem;
   }
 
+  &__link {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+
+    &--active {
+      color: var(--color-primary-inverted);
+      background-color: var(--color-brand);
+      cursor: default;
+    }
+
+    &:hover {
+      text-decoration: none;
+      border-color: var(--color-brand);
+    }
+  }
+
   &__socials {
     display: flex;
     gap: 1rem;
