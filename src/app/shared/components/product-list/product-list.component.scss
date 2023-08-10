@@ -1,9 +1,23 @@
+@import '/src/app/styles/breakpoints';
+
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2rem;
 
   &__item {
-    flex-basis: calc((100% - 9rem) / 4);
+    flex-basis: 100%;
+
+    @include for-tablet-portrait-up {
+      flex-basis: calc((100% - 2rem) / 2);
+    }
+
+    @include for-tablet-landscape-up {
+      flex-basis: calc((100% - 4rem) / 3);
+    }
+
+    @include for-desktop-up {
+      flex-basis: calc((100% - 6rem) / 4);
+    }
   }
 }

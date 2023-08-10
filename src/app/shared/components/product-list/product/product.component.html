@@ -1,17 +1,18 @@
-<article class="donut">
-  <!-- TODO: replace image placeholder -->
+<article class="product">
   <img
-    class="donut__image"
+    class="product__image"
     srcset="
-      https://placehold.co/300x150?text=Donut    1x,
-      https://placehold.co/300x150@2x?text=Donut 2x
+      https://placehold.co/270x140?text=Donut    1x,
+      https://placehold.co/270x140@2x?text=Donut 2x
     "
     alt="{{ product.title }}"
-    width="300"
-    height="150"
+    width="270"
+    height="140"
   />
-  <h3 class="donut__title">{{ product.title }}</h3>
-  <span class="donut__price">{{ product.price }}</span>
+  <div class="product__heading">
+    <h3 class="product__title">{{ product.title }}</h3>
+    <span class="product__price">{{ product.price | currency }}</span>
+  </div>
   <div class="product__footer">
     <div class="product__counter">
       <button
@@ -36,6 +37,7 @@
       </button>
     </div>
     <button
+      donuts-button
       class="product__order-btn"
       (click)="addToCart(product)"
       type="button"

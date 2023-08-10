@@ -9,7 +9,11 @@ body {
 }
 
 main {
-  margin-top: 5.75rem; // compensate header height
+  margin-top: 4.625rem; // compensate header height
+
+  @include for-tablet-portrait-up {
+    margin-top: 5.75rem;
+  }
 }
 
 ul {
@@ -39,3 +43,15 @@ select,
 textarea {
   font-family: inherit;
 }
+
+// remove number input arrows
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+// END remove number input arrows

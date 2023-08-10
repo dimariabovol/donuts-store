@@ -1,13 +1,13 @@
 <section class="hero-section">
   <div class="container">
-    <h1>Las mejores donas en sivar</h1>
-    <button type="button">Ver catálogo</button>
+    <h1>Best donuts in Ukraine</h1>
+    <a donuts-button [isLarge]="true" routerLink="/catalog">View catalog</a>
   </div>
 </section>
 <section>
   <div class="container">
-    <h2>Las preferidas</h2>
-    <a routerLink="#">Ver más...</a>
+    <h2>Favorite donuts</h2>
+    <a routerLink="/catalog">View more</a>
     <donuts-product-list
       [numberOfProductsToShow]="NUMBER_OF_PRODUCTS_TO_SHOW"
     ></donuts-product-list>

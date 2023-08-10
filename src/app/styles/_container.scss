@@ -1,6 +1,10 @@
 .container {
-  width: 100%;
+  // width: 100%; TODO: check why this brokes layout
   max-width: 77rem; // 1280px - side paddings
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
+
+  @include for-tablet-portrait-up {
+    padding: 0 1.5rem;
+  }
 }
