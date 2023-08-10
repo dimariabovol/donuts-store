@@ -15,7 +15,7 @@
       <div class="product-page__content">
         <h1 class="product-page__title">{{ product.title }}</h1>
         <p class="product-page__description">{{ product.description }}</p>
-        <span class="product-page__price">{{ product.price }}</span>
+        <span class="product-page__price">{{ product.price | currency }}</span>
         <button donuts-button type="button">Agregar</button>
       </div>
     </div>

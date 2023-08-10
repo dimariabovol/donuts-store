@@ -15,5 +15,5 @@ import {
   },
 })
 export class ButtonComponent {
-  @HostBinding('class.button--large') @Input() isLarge: boolean = false;
+  @HostBinding('class.button--small') @Input() isSmall: boolean = false;
 }
