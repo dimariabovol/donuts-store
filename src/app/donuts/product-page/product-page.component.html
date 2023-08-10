@@ -1,20 +1,23 @@
-<div class="container">
-  <div class="product-page__inner">
-    <div class="product-page__image">
-      <img
-        srcset="
-          https://placehold.co/750x440?text=Donut    1x,
-          https://placehold.co/750x440@2x?text=Donut 2x
-        "
-        [alt]="product.title"
-        width="750"
-        height="440"
-      />
-    </div>
-    <div class="product-page__content">
-      <h1 class="product-page__title">{{ product.title }}</h1>
-      <p class="product-page__description">{{ product.description }}</p>
-      <button donuts-button type="button">Agregar</button>
+<div class="product-page">
+  <div class="container">
+    <div class="product-page__inner">
+      <div class="product-page__image">
+        <img
+          srcset="
+            https://placehold.co/750x440?text=Donut    1x,
+            https://placehold.co/750x440@2x?text=Donut 2x
+          "
+          [alt]="product.title"
+          width="750"
+          height="440"
+        />
+      </div>
+      <div class="product-page__content">
+        <h1 class="product-page__title">{{ product.title }}</h1>
+        <p class="product-page__description">{{ product.description }}</p>
+        <span class="product-page__price">{{ product.price }}</span>
+        <button donuts-button type="button">Agregar</button>
+      </div>
     </div>
   </div>
 </div>

@@ -1,6 +1,8 @@
 @import '/src/app/styles/breakpoints';
 
 .product-page {
+  padding: 4rem 0;
+
   &__inner {
     @include for-tablet-portrait-up {
       display: flex;
@@ -26,5 +28,9 @@
 
   &__title {
     margin: 0 0 1.5rem;
+  }
+
+  &__price {
+    display: block;
   }
 }

@@ -8,9 +8,6 @@ import { ProductsService } from 'src/app/shared/services/products.service';
   selector: 'donuts-product-page',
   templateUrl: './product-page.component.html',
   styleUrls: ['./product-page.component.scss'],
-  host: {
-    class: 'product-page',
-  },
 })
 export class ProductPageComponent implements OnInit {
   product!: IDonut;
