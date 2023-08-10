@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CatalogPageComponent } from './catalog-page/catalog-page.component';
+import { ProductPageComponent } from './product-page/product-page.component';
 
 const routes: Routes = [
   {
@@ -16,9 +17,17 @@ const routes: Routes = [
     loadChildren: () => import('../home/home.module').then(m => m.HomeModule),
   },
   {
+    path: 'product/:id',
+    component: ProductPageComponent,
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full',
+  },
+  {
+    path: '**',
+    redirectTo: '/home',
   },
 ];
 

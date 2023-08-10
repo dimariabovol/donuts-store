@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SharedModule } from '../shared/shared.module';
 import { LogoComponent } from './components/logo/logo.component';
 import { CatalogPageComponent } from './catalog-page/catalog-page.component';
+import { ProductPageComponent } from './product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CatalogPageComponent } from './catalog-page/catalog-page.component';
     HeaderComponent,
     LogoComponent,
     CatalogPageComponent,
+    ProductPageComponent,
   ],
   imports: [
     BrowserModule,

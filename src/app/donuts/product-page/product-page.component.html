@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="product-page__inner">
+    <img
+      class="product-page__image"
+      srcset="
+        https://placehold.co/750x440?text=Donut    1x,
+        https://placehold.co/750x440@2x?text=Donut 2x
+      "
+      [alt]="product.title"
+      width="750"
+      height="440"
+    />
+    <h1 class="product-page__title">{{ product.title }}</h1>
+    <!-- <p class="product-page__description">{{ product.description }}</p> -->
+    <button donuts-button type="button">Agregar</button>
+  </div>
+</div>

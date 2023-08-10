@@ -15,7 +15,7 @@ export class ProductListComponent implements OnInit {
 
   constructor(private _productsService: ProductsService) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this._productsService.getAll$().subscribe((donuts: IDonut[]) => {
       if (!donuts.length) {
         this.isEmptyList = true;

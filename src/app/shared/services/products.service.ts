@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { IDonut } from 'src/app/interfaces/donut';
 
@@ -11,5 +11,9 @@ export class ProductsService {
 
   getAll$(): Observable<IDonut[]> {
     return this._httpClient.get<IDonut[]>('http://localhost:3000/products');
+  }
+
+  getById$(id: number): Observable<IDonut> {
+    return this._httpClient.get<IDonut>(`http://localhost:3000/products/${id}`);
   }
 }

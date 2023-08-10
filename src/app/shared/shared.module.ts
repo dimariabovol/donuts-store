@@ -5,6 +5,7 @@ import { ProductComponent } from './components/product-list/product/product.comp
 import { FormsModule } from '@angular/forms';
 import { ButtonIconComponent } from './ui/button-icon/button-icon.component';
 import { ButtonComponent } from './ui/button/button.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { ButtonComponent } from './ui/button/button.component';
     ProductComponent,
     ProductListComponent,
   ],
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterModule],
   exports: [
     ButtonComponent,
     ButtonIconComponent,
