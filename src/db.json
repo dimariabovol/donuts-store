@@ -4,121 +4,141 @@
       "id": 1,
       "image": "https://images.unsplash.com/photo-1560807707-7cc8f246cdf1",
       "title": "Glazed Donut",
-      "price": 1.99
+      "price": 1.99,
+      "description": "A classic glazed donut with a sweet and shiny sugar coating. Perfectly soft on the inside and delightfully crispy on the outside."
     },
     {
       "id": 2,
       "image": "https://images.unsplash.com/photo-1577911174076-94f08f2c8c9f",
       "title": "Chocolate Donut",
-      "price": 2.49
+      "price": 2.49,
+      "description": "Indulge in the rich and decadent flavor of our chocolate donut. Topped with a luscious chocolate glaze and chocolate shavings."
     },
     {
       "id": 3,
       "image": "https://images.unsplash.com/photo-1576484443338-38f55f238cfc",
       "title": "Strawberry Donut",
-      "price": 2.99
+      "price": 2.99,
+      "description": "Experience the burst of fruity goodness with our strawberry donut. Made with real strawberries and topped with a pink strawberry-flavored glaze."
     },
     {
       "id": 4,
       "image": "https://images.unsplash.com/photo-1597072193586-fa7d6e98dbae",
       "title": "Blueberry Donut",
-      "price": 2.49
+      "price": 2.49,
+      "description": "Enjoy the delightful blend of sweet and tangy flavors in our blueberry donut. Decorated with blueberry glaze and a sprinkle of blueberry bits."
     },
     {
       "id": 5,
       "image": "https://images.unsplash.com/photo-1565222012-307ed855c337",
       "title": "Cinnamon Donut",
-      "price": 1.99
+      "price": 1.99,
+      "description": "Warm up your taste buds with the comforting aroma of our cinnamon donut. Coated with cinnamon sugar and a touch of nutmeg."
     },
     {
       "id": 6,
       "image": "https://images.unsplash.com/photo-1513451713350-6c11b0b0135f",
       "title": "Powdered Sugar Donut",
-      "price": 1.99
+      "price": 1.99,
+      "description": "Delicate and soft, our powdered sugar donut is generously coated with a fine layer of powdered sugar, creating a melt-in-your-mouth experience."
     },
     {
       "id": 7,
       "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff25",
       "title": "Sprinkles Donut",
-      "price": 2.29
+      "price": 2.29,
+      "description": "A cheerful treat that's as fun to look at as it is to eat. Our sprinkles donut is covered in colorful sprinkles that add a playful crunch."
     },
     {
       "id": 8,
       "image": "https://images.unsplash.com/photo-1528137658308-7e538cdb64b0",
       "title": "Jelly Donut",
-      "price": 2.49
+      "price": 2.49,
+      "description": "Bite into the surprise of a fruity jelly filling encased in a soft and fluffy donut. Coated with a dusting of powdered sugar."
     },
     {
       "id": 9,
       "image": "https://images.unsplash.com/photo-1562070428-ffe6b9e50f70",
       "title": "Peanut Butter Donut",
-      "price": 2.99
+      "price": 2.99,
+      "description": "Satisfy your cravings with the nutty goodness of our peanut butter donut. Topped with a creamy peanut butter glaze and crushed peanuts."
     },
     {
       "id": 10,
       "image": "https://images.unsplash.com/photo-1543363134-2e3d9c6d2892",
       "title": "Maple Glazed Donut",
-      "price": 2.49
+      "price": 2.49,
+      "description": "Experience the warmth of our maple glazed donut. The sweet maple glaze complements the softness of the donut, creating a harmonious blend of flavors."
     },
     {
       "id": 11,
       "image": "https://images.unsplash.com/photo-1557821552-17105176692f",
       "title": "Cream-Filled Donut",
-      "price": 2.99
+      "price": 2.99,
+      "description": "Indulge in the luxurious creaminess of our cream-filled donut. A delicate pastry filled with luscious vanilla cream and dusted with powdered sugar."
     },
     {
       "id": 12,
       "image": "https://images.unsplash.com/photo-1564069115-983ea5e17b34",
       "title": "Apple Cider Donut",
-      "price": 2.49
+      "price": 2.49,
+      "description": "Embrace the flavors of fall with our apple cider donut. Infused with apple cider and warming spices, it's a true seasonal delight."
     },
     {
       "id": 13,
       "image": "https://images.unsplash.com/photo-1566076771-713ae1c52ecb",
       "title": "Sour Cream Donut",
-      "price": 1.99
+      "price": 1.99,
+      "description": "Discover the unique tanginess of our sour cream donut. The sour cream adds a pleasant twist to the classic donut flavor."
     },
     {
       "id": 14,
       "image": "https://images.unsplash.com/photo-1543363134-27ad8e368f93",
       "title": "Marble Donut",
-      "price": 2.49
+      "price": 2.49,
+      "description": "Experience the best of both worlds with our marble donut. A swirl of chocolate and vanilla flavors makes this donut a visual and taste delight."
     },
     {
       "id": 15,
       "image": "https://images.unsplash.com/photo-1543363134-1679e3b21e85",
       "title": "Coconut Donut",
-      "price": 2.29
+      "price": 2.29,
+      "description": "Transport yourself to a tropical paradise with our coconut donut. Topped with shredded coconut, it's a taste of sunshine in every bite."
     },
     {
       "id": 16,
       "image": "https://images.unsplash.com/photo-1543363134-8a03f9db00fd",
       "title": "Red Velvet Donut",
-      "price": 2.49
+      "price": 2.49,
+      "description": "Indulge in the velvety goodness of our red velvet donut. A rich cocoa-based treat with a hint of tanginess, topped with cream cheese glaze."
     },
     {
       "id": 17,
       "image": "https://images.unsplash.com/photo-1509000868-0bc8b01a4b04",
       "title": "Mint Chocolate Donut",
-      "price": 2.99
+      "price": 2.99,
+      "description": "Refresh your senses with our mint chocolate donut. A perfect balance of cool mint and rich chocolate, topped with chocolate shavings."
     },
     {
       "id": 18,
       "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
       "title": "Caramel Glazed Donut",
-      "price": 1.99
+      "price": 1.99,
+      "description": "Experience pure indulgence with our caramel glazed donut. The sweet caramel glaze complements the soft donut, creating a delightful treat."
     },
     {
       "id": 19,
       "image": "https://images.unsplash.com/photo-1533070909792-0376f871d25f",
       "title": "Raspberry Donut",
-      "price": 2.49
+      "price": 2.49,
+      "description": "Delight in the vibrant flavors of our raspberry donut. Topped with a tangy raspberry glaze and a sprinkle of freeze-dried raspberries."
     },
     {
       "id": 20,
       "image": "https://images.unsplash.com/photo-1540530134560-50f8a3889185",
       "title": "Lemon Donut",
-      "price": 1.99
+      "price": 1.99,
+      "description": "Awaken your taste buds with the zesty goodness of our lemon donut. Topped with a tangy lemon glaze and a sprinkle of lemon zest."
     }
   ]
 }

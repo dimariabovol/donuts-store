@@ -1,2 +1,30 @@
+@import '/src/app/styles/breakpoints';
+
 .product-page {
+  &__inner {
+    @include for-tablet-portrait-up {
+      display: flex;
+      gap: 2rem;
+    }
+
+    @include for-tablet-landscape-up {
+      gap: 4rem;
+    }
+  }
+
+  &__image {
+    flex-grow: 1;
+
+    @include for-phone-only {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__title {
+    margin: 0 0 1.5rem;
+  }
 }

@@ -3,4 +3,5 @@ export interface IDonut {
   image: string;
   title: string;
   price: number;
+  description: string;
 }
