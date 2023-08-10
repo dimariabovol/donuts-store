@@ -1,0 +1,11 @@
+.counter {
+  display: flex;
+
+  &__button {
+    cursor: pointer;
+  }
+
+  &__input {
+    width: 100%;
+  }
+}

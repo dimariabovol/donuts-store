@@ -15,31 +15,14 @@
     <span class="product__price">{{ product.price | currency }}</span>
   </div>
   <div class="product__footer">
-    <div class="product__counter">
-      <button
-        class="product__counter-btn"
-        (click)="decreaseCount()"
-        type="button"
-      >
-        -
-      </button>
-      <input
-        class="product__counter-input"
-        type="number"
-        [(ngModel)]="count"
-        name="counter"
-      />
-      <button
-        class="product__counter-btn"
-        (click)="increaseCount()"
-        type="button"
-      >
-        +
-      </button>
-    </div>
+    <donuts-counter
+      class="product__counter"
+      (countChange)="updateCount($event)"
+    >
+    </donuts-counter>
     <button
       donuts-button
-      class="product__order-btn"
+      class="product__order-button"
       [isSmall]="true"
       (click)="addToCart(product)"
       type="button"

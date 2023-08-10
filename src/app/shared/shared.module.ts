@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { ButtonIconComponent } from './ui/button-icon/button-icon.component';
 import { ButtonComponent } from './ui/button/button.component';
 import { RouterModule } from '@angular/router';
+import { CounterComponent } from './ui/counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { RouterModule } from '@angular/router';
     ButtonIconComponent,
     ProductComponent,
     ProductListComponent,
+    CounterComponent,
   ],
   imports: [CommonModule, FormsModule, RouterModule],
   exports: [
@@ -20,6 +22,7 @@ import { RouterModule } from '@angular/router';
     ButtonIconComponent,
     ProductComponent,
     ProductListComponent,
+    CounterComponent,
   ],
 })
 export class SharedModule {}

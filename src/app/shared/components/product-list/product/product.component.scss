@@ -35,18 +35,9 @@
 
   &__counter {
     position: relative;
-    display: flex;
   }
 
-  &__counter-btn {
-    cursor: pointer;
-  }
-
-  &__counter-input {
-    width: 100%;
-  }
-
-  &__order-btn {
+  &__order-button {
     position: relative;
   }
 }

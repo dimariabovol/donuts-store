@@ -20,13 +20,7 @@ export class ProductComponent {
     this._cartService.add(product, this.count);
   }
 
-  decreaseCount() {
-    if (this.count <= 1) return;
-
-    this.count--;
-  }
-
-  increaseCount() {
-    this.count++;
+  updateCount(count: number) {
+    this.count = count;
   }
 }

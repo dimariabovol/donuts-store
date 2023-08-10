@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { switchMap } from 'rxjs';
+import { CartService } from 'src/app/cart/cart.service';
 import { IDonut } from 'src/app/interfaces/donut';
 import { ProductsService } from 'src/app/shared/services/products.service';
 
@@ -10,12 +11,22 @@ import { ProductsService } from 'src/app/shared/services/products.service';
   styleUrls: ['./product-page.component.scss'],
 })
 export class ProductPageComponent implements OnInit {
+  count: number = 1;
   product!: IDonut;
 
   constructor(
+    private _cartService: CartService,
     private _productsServise: ProductsService,
     private _route: ActivatedRoute,
   ) {}
+
+  addToCart(product: IDonut) {
+    this._cartService.add(product, this.count);
+  }
+
+  updateCount(count: number) {
+    this.count = count;
+  }
 
   ngOnInit() {
     this._route.params
