@@ -1,12 +1,12 @@
 .button {
   display: inline-block;
   padding: 0.5rem 0.75rem;
-  color: var(--color-primary-inverted);
+  color: var(--c-primary-inverted);
   font-size: 1rem;
   line-height: 1.5;
-  background-color: var(--color-brand);
+  background-color: var(--c-brand);
   border: none;
-  border-radius: 0.25rem;
+  border-radius: var(--br-small);
   text-align: center;
   text-decoration: none;
   cursor: pointer;

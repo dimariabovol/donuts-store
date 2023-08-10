@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--color-brand);
+  color: var(--c-brand);
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -16,7 +16,7 @@
   }
 
   &--dark {
-    color: var(--color-primary);
+    color: var(--c-primary);
   }
 
   &__icon {

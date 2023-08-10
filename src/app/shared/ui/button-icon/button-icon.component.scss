@@ -4,13 +4,13 @@
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  fill: var(--color-brand);
+  fill: var(--c-brand);
   border: 1px solid transparent;
-  border-radius: 0.5rem;
+  border-radius: var(--br-base);
   text-decoration: none;
   cursor: pointer;
 
   &:hover {
-    border-color: var(--color-brand);
+    border-color: var(--c-brand);
   }
 }

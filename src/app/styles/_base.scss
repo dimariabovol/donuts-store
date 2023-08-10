@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  color: var(--color-primary);
+  color: var(--c-primary);
   font-family: 'Acme';
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  background-color: var(--color-background);
+  background-color: var(--c-background);
 }
 
 main {
@@ -29,7 +29,7 @@ img {
 }
 
 a {
-  color: var(--color-brand);
+  color: var(--c-brand);
   text-decoration: none;
 
   &:hover {

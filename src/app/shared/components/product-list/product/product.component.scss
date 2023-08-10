@@ -1,4 +1,19 @@
 .product {
+  position: relative;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: var(--br-small);
+
+  &:hover {
+    border-color: var(--c-brand);
+  }
+
+  &__link-ux {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+  }
+
   &__image {
     width: 100%;
     object-fit: cover;
@@ -19,10 +34,12 @@
   }
 
   &__counter {
+    position: relative;
     display: flex;
   }
 
   &__counter-btn {
+    cursor: pointer;
   }
 
   &__counter-input {
@@ -30,5 +47,6 @@
   }
 
   &__order-btn {
+    position: relative;
   }
 }

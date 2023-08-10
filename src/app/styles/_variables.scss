@@ -1,6 +1,14 @@
 :root {
-  --color-background: #fff;
-  --color-primary: #041912;
-  --color-primary-inverted: #fff;
-  --color-brand: #da734b;
+  // colors
+  --c-background: #fff;
+  --c-primary: #041912;
+  --c-primary-inverted: #fff;
+  --c-brand: #da734b;
+
+  // border-radiuses
+  --br-small: 0.25rem;
+  --br-base: 0.5rem;
+
+  // z-indexes
+  --zi-header: 10;
 }
