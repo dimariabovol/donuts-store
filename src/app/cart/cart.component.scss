@@ -6,13 +6,25 @@
     gap: 4rem;
   }
 
-  &__order-list {
-    flex-basis: 50%;
+  &__list {
+    flex-grow: 1;
     padding: 2rem;
     border: 1px solid var(--c-primary);
   }
 
-  &__order-form {
-    flex-basis: 50%;
+  &__title {
+    margin: 0;
+  }
+
+  &__form {
+    flex-grow: 1;
+  }
+
+  &__form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
   }
 }

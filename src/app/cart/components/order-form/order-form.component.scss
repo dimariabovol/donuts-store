@@ -1,0 +1,11 @@
+.order-form {
+  &__input {
+    & + & {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__submit {
+    margin-top: 1.5rem;
+  }
+}

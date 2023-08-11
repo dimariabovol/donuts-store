@@ -1,0 +1,31 @@
+<form class="order-form" name="order-form">
+  <donuts-input
+    class="order-form__input"
+    [label]="'Enter your name'"
+    [isLabelHidden]="true"
+    [name]="'user-name'"
+    [type]="'text'"
+  ></donuts-input>
+  <donuts-input
+    class="order-form__input"
+    [label]="'Enter your phone'"
+    [isLabelHidden]="true"
+    [name]="'user-phone'"
+    [type]="'tel'"
+  ></donuts-input>
+  <donuts-input
+    class="order-form__input"
+    [label]="'Enter your email'"
+    [isLabelHidden]="true"
+    [name]="'user-email'"
+    [type]="'email'"
+  ></donuts-input>
+  <donuts-input
+    class="order-form__input"
+    [label]="'Enter your address'"
+    [isLabelHidden]="true"
+    [name]="'user-address'"
+    [type]="'text'"
+  ></donuts-input>
+  <button class="order-form__submit" donuts-button type="button">Buy</button>
+</form>
