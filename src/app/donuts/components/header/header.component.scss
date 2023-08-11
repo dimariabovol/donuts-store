@@ -8,6 +8,10 @@
   padding: 1rem 0;
   background-color: var(--c-background);
 
+  &--shadowed {
+    box-shadow: 0 -0.25rem 0.2rem 0.2rem var(--c-primary);
+  }
+
   &__inner {
     display: flex;
     align-items: center;
