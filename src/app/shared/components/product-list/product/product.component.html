@@ -17,17 +17,17 @@
   <div class="product__footer">
     <donuts-counter
       class="product__counter"
-      (countChange)="updateCount($event)"
-    >
-    </donuts-counter>
+      [isSmall]="true"
+      #counter
+    ></donuts-counter>
     <button
       donuts-button
       class="product__order-button"
       [isSmall]="true"
-      (click)="addToCart(product)"
+      (click)="addToCart(product, counter.count)"
       type="button"
     >
-      Agregar
+      Add to cart
     </button>
   </div>
 </article>

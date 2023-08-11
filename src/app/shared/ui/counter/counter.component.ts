@@ -2,6 +2,8 @@ import {
   ChangeDetectionStrategy,
   Component,
   EventEmitter,
+  HostBinding,
+  Input,
   Output,
   ViewEncapsulation,
 } from '@angular/core';
@@ -17,7 +19,7 @@ import {
   },
 })
 export class CounterComponent {
-  @Output() countChange: EventEmitter<number> = new EventEmitter<number>();
+  @HostBinding('class.counter--small') @Input() isSmall: boolean = false;
 
   count: number = 1;
 
@@ -25,11 +27,9 @@ export class CounterComponent {
     if (this.count <= 1) return;
 
     this.count--;
-    this.countChange.emit(this.count);
   }
 
   increaseCount() {
     this.count++;
-    this.countChange.emit(this.count);
   }
 }

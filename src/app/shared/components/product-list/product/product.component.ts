@@ -12,15 +12,9 @@ import { IDonut } from 'src/app/interfaces/donut';
 export class ProductComponent {
   @Input() product!: IDonut;
 
-  count: number = 1;
-
   constructor(private _cartService: CartService) {}
 
-  addToCart(product: IDonut) {
-    this._cartService.add(product, this.count);
-  }
-
-  updateCount(count: number) {
-    this.count = count;
+  addToCart(product: IDonut, count: number) {
+    this._cartService.add(product, count);
   }
 }

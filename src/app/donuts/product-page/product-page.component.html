@@ -1,6 +1,6 @@
-<div class="product-page">
+<div *ngIf="product" class="product-page">
   <div class="container">
-    <div class="product-page__inner">
+    <div class="product-page__info">
       <div class="product-page__image">
         <img
           srcset="
@@ -16,14 +16,20 @@
         <h1 class="product-page__title">{{ product.title }}</h1>
         <p class="product-page__description">{{ product.description }}</p>
         <span class="product-page__price">{{ product.price | currency }}</span>
-        <donuts-counter
-          class="product-page__counter"
-          (countChange)="updateCount($event)"
-        ></donuts-counter>
-        <button donuts-button (click)="addToCart(product)" type="button">
-          Agregar
+        <donuts-counter class="product-page__counter" #counter></donuts-counter>
+        <button
+          donuts-button
+          (click)="addToCart(product, counter.count)"
+          type="button"
+        >
+          Add to cart
         </button>
       </div>
+    </div>
+    <div class="product-page__list">
+      <h2>Other users also prefer</h2>
+      <a routerLink="/catalog">View more</a>
+      <donuts-product-list [numberOfProductsToShow]="4"></donuts-product-list>
     </div>
   </div>
 </div>

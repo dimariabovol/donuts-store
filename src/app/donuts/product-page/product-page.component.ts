@@ -11,7 +11,6 @@ import { ProductsService } from 'src/app/shared/services/products.service';
   styleUrls: ['./product-page.component.scss'],
 })
 export class ProductPageComponent implements OnInit {
-  count: number = 1;
   product!: IDonut;
 
   constructor(
@@ -20,12 +19,8 @@ export class ProductPageComponent implements OnInit {
     private _route: ActivatedRoute,
   ) {}
 
-  addToCart(product: IDonut) {
-    this._cartService.add(product, this.count);
-  }
-
-  updateCount(count: number) {
-    this.count = count;
+  addToCart(product: IDonut, count: number) {
+    this._cartService.add(product, count);
   }
 
   ngOnInit() {
