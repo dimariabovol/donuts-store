@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { ICartDonut } from '../../interfaces/cart-product.interface';
 import { IDonut } from 'src/app/interfaces/donut';
 
 @Component({
@@ -8,11 +7,11 @@ import { IDonut } from 'src/app/interfaces/donut';
   styleUrls: ['./order-list.component.scss'],
 })
 export class OrderListComponent {
-  @Input('products') set setProducts(products: ICartDonut[]) {
+  @Input('products') set setProducts(products: IDonut[]) {
     products.map(product => (product.price *= product.count));
     this.products = products;
   }
 
-  products: ICartDonut[] = [];
+  products: IDonut[] = [];
   price: number = 0;
 }
