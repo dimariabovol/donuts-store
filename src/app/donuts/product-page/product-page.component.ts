@@ -19,8 +19,8 @@ export class ProductPageComponent implements OnInit {
     private _route: ActivatedRoute,
   ) {}
 
-  addToCart(product: IDonut, count: number) {
-    this._cartService.add(product, count);
+  addToCart(product: IDonut) {
+    this._cartService.add(product);
   }
 
   ngOnInit() {

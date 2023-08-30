@@ -23,6 +23,7 @@ export class CartComponent {
 
       this.cart = products;
 
+      // TODO: move to private method
       this.totalCartPrice = products.reduce((totalCartPrice, product) => {
         const totalProductPrice = product.price * product.count;
 

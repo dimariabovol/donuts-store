@@ -16,12 +16,11 @@
         <h1 class="product-page__title">{{ product.title }}</h1>
         <p class="product-page__description">{{ product.description }}</p>
         <span class="product-page__price">{{ product.price | currency }}</span>
-        <donuts-counter class="product-page__counter" #counter></donuts-counter>
-        <button
-          donuts-button
-          (click)="addToCart(product, counter.count)"
-          type="button"
-        >
+        <donuts-counter
+          class="product-page__counter"
+          [product]="product"
+        ></donuts-counter>
+        <button donuts-button (click)="addToCart(product)" type="button">
           Add to cart
         </button>
       </div>

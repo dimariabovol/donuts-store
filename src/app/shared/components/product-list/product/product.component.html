@@ -1,4 +1,4 @@
-<article class="product">
+<article *ngIf="product" class="product">
   <a class="product__link-ux" [routerLink]="['/product', product.id]"></a>
   <img
     class="product__image"
@@ -17,14 +17,14 @@
   <div class="product__footer">
     <donuts-counter
       class="product__counter"
+      [product]="product"
       [isSmall]="true"
-      #counter
     ></donuts-counter>
     <button
       donuts-button
       class="product__order-button"
       [isSmall]="true"
-      (click)="addToCart(product, counter.count)"
+      (click)="addToCart(product)"
       type="button"
     >
       Add to cart

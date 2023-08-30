@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { FormControl } from '@angular/forms';
 import { CartService } from 'src/app/cart/cart.service';
 import { IDonut } from 'src/app/interfaces/donut';
 
@@ -14,7 +13,7 @@ export class ProductComponent {
 
   constructor(private _cartService: CartService) {}
 
-  addToCart(product: IDonut, count: number) {
-    this._cartService.add(product, count);
+  addToCart(product: IDonut) {
+    this._cartService.add(product);
   }
 }

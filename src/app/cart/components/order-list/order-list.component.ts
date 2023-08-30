@@ -12,6 +12,6 @@ export class OrderListComponent {
     this.products = products;
   }
 
-  products: IDonut[] = [];
   price: number = 0;
+  products: IDonut[] = [];
 }

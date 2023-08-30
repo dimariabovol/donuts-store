@@ -1,12 +1,11 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  EventEmitter,
   HostBinding,
   Input,
-  Output,
   ViewEncapsulation,
 } from '@angular/core';
+import { IDonut } from 'src/app/interfaces/donut';
 
 @Component({
   selector: 'donuts-counter',
@@ -19,17 +18,17 @@ import {
   },
 })
 export class CounterComponent {
-  @HostBinding('class.counter--small') @Input() isSmall: boolean = false;
+  @Input() product!: IDonut;
 
-  count: number = 1;
+  @Input() @HostBinding('class.counter--small') isSmall: boolean = false;
 
   decreaseCount() {
-    if (this.count <= 1) return;
-
-    this.count--;
+    if (this.product.count > 1) {
+      this.product.count--;
+    }
   }
 
   increaseCount() {
-    this.count++;
+    this.product.count++;
   }
 }

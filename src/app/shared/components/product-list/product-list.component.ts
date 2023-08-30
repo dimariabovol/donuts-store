@@ -16,15 +16,15 @@ export class ProductListComponent implements OnInit {
   constructor(private _productsService: ProductsService) {}
 
   ngOnInit() {
-    this._productsService.getAll$().subscribe((donuts: IDonut[]) => {
-      if (!donuts.length) {
+    this._productsService.getAll$().subscribe((products: IDonut[]) => {
+      if (!products.length) {
         this.isEmptyList = true;
         return;
       }
 
       this.products = this.numberOfProductsToShow
-        ? donuts.splice(0, this.numberOfProductsToShow)
-        : donuts;
+        ? products.splice(0, this.numberOfProductsToShow)
+        : products;
     });
   }
 }

@@ -16,17 +16,17 @@ export class CartService {
     [],
   );
 
-  add(product: IDonut, count: number) {
+  add(product: IDonut) {
     const availableProduct = this.cart.find(
       cartProduct => cartProduct.id === product.id,
     );
 
     if (!availableProduct) {
-      this.cart.push({ ...product, count });
+      this.cart.push(product);
     }
 
     if (availableProduct) {
-      availableProduct.count = count;
+      availableProduct.count = product.count;
     }
 
     this._cart$$.next(this.cart);
