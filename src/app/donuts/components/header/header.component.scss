@@ -40,19 +40,11 @@
   }
 
   &__link {
-    padding: 0.25rem 0.5rem;
-    border: 1px solid transparent;
-    border-radius: var(--br-small);
+    padding: 0.5rem 0;
 
     &--active {
-      color: var(--c-primary-inverted);
-      background-color: var(--c-brand);
+      text-decoration: underline;
       cursor: default;
-    }
-
-    &:hover {
-      border-color: var(--c-brand);
-      text-decoration: none;
     }
   }
 

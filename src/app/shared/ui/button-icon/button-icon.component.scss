@@ -5,12 +5,12 @@
   width: 2.5rem;
   height: 2.5rem;
   fill: var(--c-brand);
-  border: 1px solid transparent;
   border-radius: var(--br-base);
   text-decoration: none;
   cursor: pointer;
 
   &:hover {
-    border-color: var(--c-brand);
+    fill: var(--c-primary-inverted);
+    background-color: var(--c-brand);
   }
 }
