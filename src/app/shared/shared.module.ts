@@ -8,6 +8,7 @@ import { ButtonComponent } from './ui/button/button.component';
 import { RouterModule } from '@angular/router';
 import { CounterComponent } from './ui/counter/counter.component';
 import { InputComponent } from './ui/input/input.component';
+import { SimpleSectionComponent } from './components/simple-section/simple-section.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { InputComponent } from './ui/input/input.component';
     ProductListComponent,
     CounterComponent,
     InputComponent,
+    SimpleSectionComponent,
   ],
   imports: [CommonModule, FormsModule, RouterModule],
   exports: [
@@ -26,6 +28,7 @@ import { InputComponent } from './ui/input/input.component';
     ProductListComponent,
     CounterComponent,
     InputComponent,
+    SimpleSectionComponent,
   ],
 })
 export class SharedModule {}

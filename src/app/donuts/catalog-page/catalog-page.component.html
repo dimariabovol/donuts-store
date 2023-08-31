@@ -1,9 +1,18 @@
-<div class="container">
-  <h1>Catalog</h1>
-  <form>
-    <input type="search" placeholder="Busca tus preferidas..." />
-    <button type="button">Buscar</button>
-  </form>
+<section class="catalog">
+  <div class="container">
+    <div class="catalog__header">
+      <h1 class="catalog__title">Catalog</h1>
+      <div class="catalog__search">
+        <label class="sr-only" for="search">Search products</label>
+        <input
+          id="search"
+          type="search"
+          placeholder="Find your favourites..."
+        />
+        <button donuts-button [isSmall]="true" type="button">Buscar</button>
+      </div>
+    </div>
 
-  <donuts-product-list></donuts-product-list>
-</div>
+    <donuts-product-list></donuts-product-list>
+  </div>
+</section>

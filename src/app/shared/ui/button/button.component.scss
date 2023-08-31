@@ -10,7 +10,13 @@
   border-radius: var(--br-small);
   text-align: center;
   text-decoration: none;
+  transition: background-color 0.1s;
   cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    background-color: var(--c-brand-dark);
+  }
 
   &--small {
     min-width: 3rem;
