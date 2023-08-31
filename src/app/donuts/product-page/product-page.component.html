@@ -25,10 +25,13 @@
         </button>
       </div>
     </div>
-    <div class="product-page__list">
-      <h2>Other users also prefer</h2>
-      <a routerLink="/catalog">View more</a>
+
+    <donuts-simple-section
+      class="product-page__product-list"
+      [title]="'Other users also prefer'"
+    >
+      <a routerLink="/catalog" action>View more</a>
       <donuts-product-list [numberOfProductsToShow]="4"></donuts-product-list>
-    </div>
+    </donuts-simple-section>
   </div>
 </div>
