@@ -3,13 +3,22 @@
     <div class="catalog__header">
       <h1 class="catalog__title">Catalog</h1>
       <div class="catalog__search">
-        <label class="sr-only" for="search">Search products</label>
+        <label class="sr-only" for="catalog-search">Search products</label>
         <input
-          id="search"
+          donutsInput
+          id="catalog-search"
           type="search"
+          name="catalog-search"
           placeholder="Find your favourites..."
         />
-        <button donutsButton [isSmall]="true" type="button">Buscar</button>
+        <button
+          donutsButton
+          class="catalog__search-btn"
+          [isSmall]="true"
+          type="button"
+        >
+          Buscar
+        </button>
       </div>
     </div>
 

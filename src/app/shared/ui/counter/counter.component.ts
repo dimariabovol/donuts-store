@@ -19,7 +19,6 @@ import { IDonut } from 'src/app/interfaces/donut';
 })
 export class CounterComponent {
   @Input() product!: IDonut;
-
   @Input() @HostBinding('class.counter--small') isSmall: boolean = false;
 
   decreaseCount() {
