@@ -1,7 +1,7 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: '[donuts-button-icon]',
+  selector: '[donutsButtonIcon]',
   templateUrl: './button-icon.component.html',
   styleUrls: ['./button-icon.component.scss'],
   encapsulation: ViewEncapsulation.None,

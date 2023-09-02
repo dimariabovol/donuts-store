@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: '[donuts-button]',
+  selector: '[donutsButton]',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   encapsulation: ViewEncapsulation.None,
