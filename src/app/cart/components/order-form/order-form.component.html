@@ -1,31 +1,43 @@
 <form class="order-form" name="order-form">
-  <donuts-input
-    class="order-form__input"
-    [label]="'Enter your name'"
-    [isLabelHidden]="true"
-    [name]="'user-name'"
-    [type]="'text'"
-  ></donuts-input>
-  <donuts-input
-    class="order-form__input"
-    [label]="'Enter your phone'"
-    [isLabelHidden]="true"
-    [name]="'user-phone'"
-    [type]="'tel'"
-  ></donuts-input>
-  <donuts-input
-    class="order-form__input"
-    [label]="'Enter your email'"
-    [isLabelHidden]="true"
-    [name]="'user-email'"
-    [type]="'email'"
-  ></donuts-input>
-  <donuts-input
-    class="order-form__input"
-    [label]="'Enter your address'"
-    [isLabelHidden]="true"
-    [name]="'user-address'"
-    [type]="'text'"
-  ></donuts-input>
-  <button class="order-form__submit" donuts-button type="button">Buy</button>
+  <div class="order-form__input">
+    <label class="sr-only" for="user-name">Enter your name</label>
+    <input
+      donutsInput
+      id="user-name"
+      type="text"
+      name="user-name"
+      placeholder="Your name"
+    />
+  </div>
+  <div class="order-form__input">
+    <label class="sr-only" for="user-phone">Enter your phone</label>
+    <input
+      donutsInput
+      id="user-phone"
+      type="tel"
+      name="user-phone"
+      placeholder="Your phone"
+    />
+  </div>
+  <div class="order-form__input">
+    <label class="sr-only" for="user-email">Enter your email</label>
+    <input
+      donutsInput
+      id="user-email"
+      type="email"
+      name="user-email"
+      placeholder="Your email"
+    />
+  </div>
+  <div class="order-form__input">
+    <label class="sr-only" for="user-address">Enter your address</label>
+    <input
+      donutsInput
+      id="user-address"
+      type="text"
+      name="user-address"
+      placeholder="Your address"
+    />
+  </div>
+  <button donuts-button class="order-form__submit" type="button">Buy</button>
 </form>
