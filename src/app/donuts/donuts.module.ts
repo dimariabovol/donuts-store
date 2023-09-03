@@ -11,6 +11,7 @@ import { SharedModule } from '../shared/shared.module';
 import { LogoComponent } from './components/logo/logo.component';
 import { CatalogPageComponent } from './catalog-page/catalog-page.component';
 import { ProductPageComponent } from './product-page/product-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [

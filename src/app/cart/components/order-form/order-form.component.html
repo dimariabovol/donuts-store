@@ -1,8 +1,9 @@
-<form class="order-form" name="order-form">
+<form class="order-form" [formGroup]="orderForm" name="order-form">
   <div class="order-form__input">
     <label class="sr-only" for="user-name">Enter your name</label>
     <input
       donutsInput
+      formControlName="name"
       id="user-name"
       type="text"
       name="user-name"
@@ -14,6 +15,7 @@
     <input
       donutsInput
       id="user-phone"
+      formControlName="phone"
       type="tel"
       name="user-phone"
       placeholder="Your phone"
@@ -24,6 +26,7 @@
     <input
       donutsInput
       id="user-email"
+      formControlName="email"
       type="email"
       name="user-email"
       placeholder="Your email"
@@ -34,6 +37,7 @@
     <input
       donutsInput
       id="user-address"
+      formControlName="address"
       type="text"
       name="user-address"
       placeholder="Your address"
